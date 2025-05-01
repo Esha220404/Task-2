@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TravelExplore</h1>
+        </div>
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="cta-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Amazing Places</h2>
+            <p>Explore the world's most beautiful destinations with our curated travel experiences.</p>
+            <a href="#" class="btn">Start Exploring</a>
+        </div>
+    </section>
+
+    <main class="grid-container">
+        <section class="featured">
+            <h2>Featured Destinations</h2>
+            <div class="featured-grid">
+                <div class="card">
+                    
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPAPAs3eKgJn7t0D8ukOBt5tWQaCUJgqEdgfIfj=w270-h312-n-k-no"alt="Paris">
+                    
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>Experience the romance and charm of the City of Light.</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoRp-QZNnk8Mi5lCRXEukdGOuj_9BB651ZSg&s" alt="Bali">
+                    <div class="card-content">
+                        <h3>Bali, IIndonesia</h3>
+                        <p>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands.</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZ8oUi_5kEdlrnok8tE44ihhEjAk5Ks8ZNg&s" alt="">
+                    <div class="card-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Santorini, known since ancient times as Thira, is one of the most famous islands in the world.</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgF2GwF_98Fmfa9YTYg0Tu2t_Mp4hsGdQ7kA&s" alt="">
+                    <div class="card-content">
+                        <h3>Manali, India</h3>
+                        <p>Manali is a popular tourist destination in India and serves as the gateway to the Lahaul and Spiti district as well as the city of Leh in Ladakh.</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <section class="main-content">
+                <h2>Popular Travel Experiences</h2>
+                <article>
+                    <h3>Cultural Immersion</h3>
+                    <p>Immerse yourself in local traditions and customs for an authentic travel experience.</p>
+                    <p>Our cultural immersion experiences connect you with local communities, allowing you to participate in traditional ceremonies, learn local crafts, and enjoy authentic cuisine prepared by local families.</p>
+                </article>
+                <article>
+                    <h3>Adventure Tours</h3>
+                    <p>Push your limits with thrilling adventures in stunning natural environments.</p>
+                    <p>From trekking through dense rainforests to scaling mountain peaks, our adventure tours are designed for those seeking an adrenaline rush combined with breathtaking scenery.</p>
+                </article>
+                <article>
+                    <h3>Relaxation Retreats</h3>
+                    <p>Unwind and rejuvenate at our carefully selected wellness destinations.</p>
+                    <p>Our relaxation retreats offer the perfect balance of peaceful environments, luxury accommodations, and wellness activities to help you disconnect from daily stress.</p>
+                </article>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Travel Tips</h3>
+                    <ul>
+                        <li>Pack light and smart</li>
+                        <li>Learn basic local phrases</li>
+                        <li>Research local customs</li>
+                        <li>Get travel insurance</li>
+                        <li>Keep digital copies of documents</li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for travel inspiration and exclusive deals.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The cultural tour in Japan exceeded all our expectations. Our guide was knowledgeable and the experiences were authentic and meaningful."</p>
+                        <h4>- Sarah Johnson</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"From booking to return, everything was seamless. The attention to detail and personalized service made our family vacation perfect."</p>
+                        <h4>- David Martinez</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As a solo traveler, I felt safe and well-taken care of. The small group size allowed me to make friends while still having personal space."</p>
+                        <h4>- Emma Thompson</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>TravelExplore</h3>
+                <p>Making travel dreams come true since 2010. Award-winning service and unforgettable experiences.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p>Email: info@travelexplore.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Adventure Ave, Travel City</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 TravelExplore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
